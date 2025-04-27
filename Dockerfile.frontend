@@ -1,0 +1,22 @@
+# ===== STAGE 1: Build React app =====
+FROM node:18 AS builder
+WORKDIR /app
+
+# Cài dependencies
+COPY Frontend/package*.json ./
+RUN npm install
+
+# Copy code và build
+COPY Frontend/ .
+RUN npm run build
+
+# ===== STAGE 2: Serve bằng NGINX =====
+FROM nginx:alpine
+COPY --from=builder /app/build /usr/share/nginx/html
+
+# Copy file cấu hình nginx nếu cần
+# COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]

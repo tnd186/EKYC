@@ -1,0 +1,282 @@
+#upload-card-frame {
+  position: relative;
+  overflow: auto;
+  background: rgba(255, 255, 255, 1.00);
+  height: 100vh;
+  width: 100%;
+}
+
+#front-vic-frame,
+#back-vic-frame {
+  position: absolute;
+  background: rgba(248, 248, 255, 1.00);
+  border-color: #007bffff;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  height: 348px;
+  width: 898px;
+}
+
+#front-vic-frame {
+  left: 418px;
+  top: 172px;
+}
+
+#back-vic-frame {
+  left: 424px;
+  top: 572px;
+}
+
+#upload-card-frame #process-1,
+#upload-card-frame #process-2,
+#upload-card-frame #process-3 {
+  position: absolute;
+  border-color: #000000ff;
+  border-style: solid;
+  border-width: 1px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+#upload-card-frame #process-1 {
+  background: rgba(0, 119, 190, 1.00);
+  left: 633px;
+  top: 48px;
+}
+
+#upload-card-frame #process-2,
+#upload-card-frame #process-3 {
+  background: rgba(255, 255, 255, 1.00);
+}
+
+#upload-card-frame #process-2 {
+  left: 840px;
+  top: 48px;
+}
+
+#upload-card-frame #process-3 {
+  left: 1047px;
+  top: 48px;
+}
+
+#upload-card-frame #connect-1-2,
+#upload-card-frame #connect-2-3 {
+  position: absolute;
+  background: rgba(255, 255, 255, 1.00);
+  border-color: #000000ff;
+  border-style: solid;
+  border-width: 1px 0 1px 0;
+  height: 18px;
+  width: 150px;
+}
+
+#upload-card-frame #connect-1-2 {
+  left: 693px;
+  top: 68px;
+}
+
+#upload-card-frame #connect-2-3 {
+  left: 900px;
+  top: 68px;
+}
+
+#upload-card-frame #text-1,
+#upload-card-frame #text-2,
+#upload-card-frame #text-3 {
+  color: #000000ff;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  height: 24px;
+  position: absolute;
+  top: 65px;
+}
+
+#upload-card-frame #text-1 {
+  color: #ffffffff;
+  left: 658px;
+  width: 10px;
+}
+
+#upload-card-frame #text-2 {
+  left: 865px;
+  width: 13px;
+}
+
+#upload-card-frame #text-3 {
+  left: 1072px;
+  width: 14px;
+}
+
+#text-front-vic,
+#text-back-vic,
+#text-illu-front-vic,
+#text-illu-back-vic {
+  color: #333333ff;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  position: absolute;
+}
+
+#text-front-vic {
+  height: 48px;
+  width: 313px;
+  left: 442px;
+  top: 193px;
+}
+
+#text-back-vic {
+  height: 48px;
+  width: 294px;
+  left: 448px;
+  top: 593px;
+}
+
+#text-illu-front-vic {
+  height: 24px;
+  width: 140px;
+  left: 1027px;
+  top: 480px;
+}
+
+#text-illu-back-vic {
+  height: 24px;
+  width: 140px;
+  left: 1027px;
+  top: 880px;
+}
+
+#upload-front-vic-button,
+#upload-back-vic-button {
+  position: absolute;
+  border-color: #007bffff;
+  border-style: dashed;
+  border-width: 1px;
+  border-radius: 16px;
+  height: 229px;
+  width: 355px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#upload-front-vic-button {
+  left: 470px;
+  top: 240px;
+}
+
+#upload-back-vic-button {
+  left: 470px;
+  top: 635px;
+}
+
+.uploaded {
+  background: rgba(255, 255, 255, 1.00);
+}
+
+.upload-input {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.upload-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
+#icon-front-vic-button,
+#icon-back-vic-button {
+  background: url('/public/Src_image/Upload_Icon.png') 100% / cover no-repeat;
+  transform: scaleX(-1);
+  height: 55px;
+  width: 55px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#icon-back-vic-button {
+  margin-bottom: 5px;
+}
+
+#text-front-vic-button,
+#text-back-vic-button {
+  color: #333333ff;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  height: 38px;
+  width: 120px;
+  cursor: pointer;
+}
+
+#image-illu-front-vic,
+#image-illu-back-vic {
+  position: absolute;
+  border-color: #000000ff;
+  border-style: solid;
+  border-width: 0.7px;
+  border-radius: 20px;
+}
+
+#image-illu-front-vic {
+  background: url('/public/Src_image/Front_VIC.png') 100% / cover no-repeat;
+  height: 224.6px;
+  width: 358.98px;
+  left: 909px;
+  top: 240px;
+}
+
+#image-illu-back-vic {
+  background: url('/public/Src_image/Back_VIC.png') 100% / cover no-repeat;
+  height: 228.6px;
+  width: 354.85px;
+  left: 917px;
+  top: 635px;
+}
+
+#next-button {
+  position: absolute;
+  background: rgba(0, 119, 190, 1.00);
+  border-color: #000000ff;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 30px;
+  height: 60px;
+  width: 140px;
+  left: 1446px;
+  top: 948px;
+  cursor: pointer;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+#text-next-button {
+  color: #ffffffff;
+  font-family: Inter;
+  font-size: 23px;
+  font-weight: 1500;
+  text-align: center;
+  cursor: pointer;
+}
+
+#space-end-page-1 {
+  height: 20px;
+  width: 60px;
+  position: absolute;
+  top: 1078px;
+}

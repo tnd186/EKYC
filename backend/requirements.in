@@ -1,0 +1,15 @@
+django 
+django-cors-headers
+djongo
+pillow 
+numpy 
+opencv-python 
+torch 
+torchvision 
+facenet-pytorch 
+ultralytics 
+vietocr 
+qrdet
+
+
+

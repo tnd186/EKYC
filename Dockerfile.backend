@@ -1,0 +1,25 @@
+# Sử dụng base image nhẹ
+FROM python:3.10-slim
+
+# Thư mục làm việc
+WORKDIR /app
+
+# Cài đặt git và clean
+RUN apt-get update && \
+    apt-get install -y git && \
+    rm -rf /var/lib/apt/lists/*
+
+# Copy và cài dependencies
+COPY Backend/requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy source code
+COPY Backend/ .
+
+# Mở cổng
+EXPOSE 8000
+
+# Chạy server
+CMD sh -c "sleep 10 && \
+           python manage.py migrate && \
+           python manage.py runserver 0.0.0.0:8000"
